@@ -1,0 +1,759 @@
+body{
+    /* background-image: url(Images/Background.jpg); */
+    background-color: #0d102d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* HOME PAGE //////////////////////////////////////////////////////////////// */
+.container_introduction{
+    padding-top: 80px;
+    transition: opacity 3s;
+    margin-left: 15%;
+    margin-right: 10%;
+    /* background-color: darkblue; */
+}
+
+.container_introduction_head .introduction_head {display: inline-block;}
+.container_introduction_head {
+    transition: opacity 3s;
+    padding-top: 120px;
+    /* background-color: yellow; */
+    align-items: center;
+    justify-content: center;
+}
+.introduction_head{
+    /* background-color: green; */
+    margin-right: 20px;
+    text-align: left;
+}
+
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    color: #c5d9ee;
+    margin-top: 200px;
+    /* type bar */
+    border-right: 6px solid;
+    border-color: #f38ad4;
+    /* animation */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+        animation: 
+            typing .75s steps(17),
+            cursor 1s step-end infinite alternate;
+}
+
+.introduction_nickname{
+    font-size: 80px;
+    font-style: bold;
+    color: #f38ad4;
+}
+
+.introduction_info{
+    animation: 
+        fade-up 1s;
+}
+.introduction_sentence{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 50px;
+    color: #5e7691;
+    
+}
+
+.container_introduction_paragraph .introduction_paragraph{
+    padding-top: 20px;
+    padding-right: 50%;
+    position: sticky;
+}
+.introduction_paragraph{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    color: #5e7691;
+    line-height: 40px;
+        animation:
+            fade-up 1s;
+}
+
+/* ========================================================== navigation menu */
+.nav_menu{
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    position: fixed;
+    width: 260px;
+    padding-bottom: 300px;
+}
+
+.nav_menu .nav_link{
+    bottom: 0;
+    right: 0;
+    padding-bottom: 300px;
+    padding-right: 6%;
+    position: fixed;
+    text-align: right;
+    line-height: 30px;
+        animation:
+            fade-up 1s;
+}
+.nav_menu .nav_link li{
+    position: relative;
+    list-style: none;
+    line-height: 50px;
+}
+.nav_menu .nav_link li i{
+    height: 50px;
+    min-width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+}
+
+.nav_menu .nav_link li a .nav_link_name{
+    font-size: 22px;
+    font-weight: 400;
+    color:#f38ad4;
+    transition: all 0.3s;
+    animation:
+        fadeslide-right 1s;
+}
+.nav_menu .nav_link li a .nav_link_name:hover{
+    color: #c5d9ee;
+} 
+
+/* =========================================================== nav bar contacts */
+.nav_link .contacts {
+    padding-top: 20px;
+}
+.contacts{
+    bottom: 0;
+    right: 0;
+    padding-bottom: 60px;
+    padding-right: 6%;
+    position: fixed;
+    text-align: right;
+    line-height: 30px;
+    color: #f38ad4;
+    list-style-type: none;
+        animation:
+            fade-up 1s;
+}
+
+.contacts .contacts_email li a{
+    color: #f38ad4; 
+    transition: all 0.3s;
+}
+.contacts li a span{
+    padding-left: 10px;
+}
+.contacts .contacts_email li a:hover{
+    color: #c5d9ee;
+}
+.contacts_facebook li a{
+    color:  #f38ad4;
+        transition: all 0.3s;
+}
+.contacts_facebook li a:hover{
+    color:  #c5d9ee;
+}
+
+/* =========================================================== contact button */
+.container_contact_btn{
+    /* background-color: pink; */
+    padding-top: 35px;
+}
+.contact_btn{
+    font-size: 30px; 
+    background-color: #c5d9ee;
+    padding: .5em 1em;
+    border-radius: 20px;
+    border: 1em;
+    outline: 1em;
+    cursor: pointer;
+        transition: all 0.3s;
+        animation:
+            fade-up 1s;
+}
+.contact_btn:hover{
+    background-color: #f38ad4;
+}
+
+.contact{
+    font-size: 12px;
+    font-weight: 500;
+
+    padding-top: 30px;
+    padding: 10px 20px;
+    border-radius: 5000px;
+        transition: all 0.3s;
+        animation: 
+            fadeslide-right 1s;
+}
+.contact_me{
+    color:  #0d102d;
+}
+
+
+/* ABOUT ME PAGE //////////////////////////////////////////////////////////// */
+
+h2{
+    color: #c5d9ee;
+    font-size: 45px;
+
+}
+
+.about_olfu .olfu_link{
+    color:#c5d9ee;
+    font-size: 20px;
+        transition: all 0.3s;
+}
+.about_olfu .olfu_link:hover{
+    color:#f38ad4;
+        transition: all 0.3s;
+}
+.about_cs{
+    color:#c5d9ee;
+    font-size: 20px;
+}
+
+.about_languages_intro{
+    font-size: 20px;
+    color: #5e7691;
+    line-height: 40px;
+    padding-top: 20px;
+    padding-top: 15px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container .container_about{
+    margin-top: 180px;
+    padding-top: 10%;
+    margin-left: 15%;
+    padding-right: 3.5%;
+        animation:
+            fade-up 1s;
+}
+
+.languages_col{
+    display: flex;
+    font-size: 20px;
+    color: #5e7691;
+    line-height: 40px;
+        animation: 
+            fade-in 5s;
+}
+.about_paragraph{
+    font-size: 20px;
+    color: #5e7691;
+    line-height: 40px;
+    padding-top: 20px;
+}
+
+.container_about_pic{
+    display: fixed;
+    padding-top: 25%;
+    /* background-color: orange; */
+    margin-right: 25%;
+        animation:
+        fade-up 1s;
+        
+}
+
+.about_pic{
+    /* margin-top: 10%; */
+    padding: 0;
+    margin: 0;
+    /* margin-left: 30px; */
+    border-radius: 70px;
+    border: none;
+    background-color: #141738;
+}
+.about_pic img{
+    border-radius: 70px;
+}
+
+.languages_col1{
+    margin-left: 20px;
+    margin-top: 15px;
+    list-style-type: none;
+
+}
+.languages_col2{
+    margin-left:70px;
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.about_friendly{
+    font-size: 20px;
+    color: #5e7691;
+    line-height: 40px;
+    padding-top: 20px;
+}
+.languages_col1 li i{
+    list-style-type: none;
+}
+
+.languages_col1 li i{
+    color:#f38ad4;
+}
+.languages_col2 li i{
+    color:#f38ad4;
+}
+
+
+
+/* OLFU PAGE //////////////////////////////////////////////////////////////// */
+.content_button a{
+    padding: 10px 20px;
+    background:#c5d9ee;
+    color:#0d102d;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+.content_button{
+    padding-top: 20%;
+}
+
+.container_olfu{
+    /* background-color: pink; */
+    display: fixed;
+    padding-top: 12.5%;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 25%;
+    padding-bottom:300px;
+        animation:
+        fade-up 1s;
+}
+.container_olfu_header{
+    /* background-color: orange; */
+    margin-top: 10px;
+    padding-bottom: 2%;
+    display: flex;
+}
+.olfu_header_project{display: inline-block;}
+.olfu_header_project{
+    margin-left: 10px;
+    transition: filter 0ms ease-in-out 0ms;
+    /* background-color: pink */
+}
+.olfu_header_project h2{
+    color:#f38ad4;
+    border-right: 4px solid;
+    border-color: #f38ad4;
+    /* animation */
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+        animation: 
+            typing .75s steps(12),
+            cursor 1s step-end infinite alternate;
+}
+
+.olfu_header_paragraph p{
+    /* background-color: teal;; */
+    color:#5e7691;
+    font-size: 22px;  
+    line-height: 40px;  
+}
+
+.olfu_header{
+    color: #c5d9ee;
+    font-size: 45px;
+}
+
+/*================================================================= slideshow */
+.project_section{
+    /* background-color: green; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-bottom: 20px;
+    
+}
+
+.project_section .idea{
+    margin-top: 3%;
+}
+.project_section img{
+    max-width: 350px;
+    max-height: 350px;
+    /* justify-content: center;
+    display: block;
+    margin: auto; */
+}    
+
+.idea{
+    /* background: yellow; */
+    border-radius: 50px;
+    margin-right: 30px;
+    display: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.idea_img{
+    position: relative;
+    color: rgba(0,0,0,.5);
+    display: fixed;
+    transition: 1s;
+}
+.idea_img img{
+    border-radius: 50px;
+}
+
+.idea_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* transition: opacity 0.4s ease-in-out; */ 
+    /* cursor: pointer; */
+    display: relative;
+}
+.idea_content h3{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color:#c5d9ee;
+    
+}
+.idea_title1{
+    padding-left: 9.5%;
+}
+.idea_title2{
+    padding-left: 13%;
+}
+.idea_title3{
+    padding-left: 3.5%;
+}
+.idea_content_sentence{
+    font-size: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: absolute;
+    top: 65%;
+    /* background-color: indigo; */
+    color: #c5d9ee;
+    opacity: 0;
+}
+
+.idea_img:hover >  *{
+    transform: translateY(0px);
+    /* transition: transform 1s; */
+}
+.idea_img > *{
+    transform: translateY(30px);
+    transition: transform 1s;
+}
+
+.content_button a:hover{
+   background-color: #f38ad4;
+   transition: all 0.3s;
+}
+
+.idea:hover > .idea_img{
+    transform: scale(1.1);
+    transform: 1s;
+}
+
+.content_button{
+    /* background-color: white; */
+    position: absolute;
+    padding: 38%;
+    margin-top: 27%;
+   
+}
+
+
+/* POP-UP PAGE ////////////////////////////////////////////////////////////// */
+.popup-1 .popup_content{
+    background-color: green;
+    position: relative;
+    top: 30%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background:#f38ad4;
+    width:  800px;
+    height: 220px;
+    padding-top: 20%;
+    /* display: flex; */
+}
+.popup-1 h2{
+    padding-top: 5%;
+    padding-left: 20%;
+    animation: fade-in 1s;
+}
+.popup-1 .ideal_title2{
+    padding-top: 10%;
+    padding-left: 30.5%;
+    animation: fade-in 1s;
+}
+
+.idea_container{
+    margin-left: 33%;
+    margin-top: 20px;
+    width: 460px;
+    top: 320%;
+    left: 3.5%;
+    transform: (-50%, -50%);
+    border-radius: 50px;
+    overflow: hidden;
+    animation: fade-up 1s;
+}
+.idea_wrapper1{
+    display: flex;
+    width: 100%;
+        animation: slide1 40s infinite;
+}
+.idea_wrapper2{
+    display: flex;
+    width: 100%;
+        animation: slide2 40s infinite;
+}
+.idea_wrapper1 img{
+    max-width: 460px;
+}
+.idea_wrapper2 img{
+    max-width: 460px;
+
+}
+.nav_link_back{
+    font-size: 22px;
+    font-weight: 400;
+    color:#f38ad4;
+    transition: all 0.3s;
+    animation:
+        fadeslide-right 1s;
+}
+.nav_link_back:hover{
+    color: #c5d9ee;
+} 
+/*============================================================== idea 1 popup */
+
+.idea_paragraph{
+    /* position: absolute; */
+    text-align: justify;
+    top: 10%;
+    /* background-color: orange; */
+    padding-left: 20%;
+    padding-right: 30%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    float: left;
+}
+.idea_paragraph h3{
+    font-size: 18px;
+    color:#5e7691;
+    line-height: 40px;
+    animation: fade-up 1s;
+}
+.popup-1 h2{
+    color:#f38ad4;
+    animation: fade-up .5s;
+}
+
+
+/* KEYFRAMES //////////////////////////////////////////////////////////////// */
+/*========================================================== page transitions */
+
+@keyframes transition-in{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+@keyframes transition-out-left{
+    from{
+        opacity: 1;
+        transform: translateX(20px)
+    }
+    to{
+        opacity: 0;
+        transform: translateX(0px)
+    }
+}
+
+/*============================================================== welcome page */
+@keyframes cursor{
+    50% {border-color: transparent}
+}
+@keyframes typing{
+    from {width: 0}
+}
+@keyframes hold{
+    from{
+
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/*================================================================= home page */
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes fade-out{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeslide-left{
+    0%{
+        opacity: 1;
+        transform: translateX(20px)
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0px);
+    }
+}
+@keyframes fadeslide-right{
+    0%{
+        opacity: 0;
+        transform: translateX(20px)
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(1px);
+    }
+}
+
+/*===================================================================== popup */
+@keyframes slide1{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    18%{
+        transform: translateX(-100%);
+    }
+    28%{
+        transform: translateX(-100%);
+    }
+    38%{
+        transform: translateX(-200%);
+    }
+    48%{
+        transform: translateX(-200%);
+    }
+    58%{
+        transform: translateX(-300%);
+    }
+    68%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    88%{
+        transform: translateX(-400%);
+    }
+    94%{
+        transform: translateX(-500%);
+    }
+    100%{
+        transform: translateX(-500%);
+    }
+}
+
+@keyframes slide2{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    18%{
+        transform: translateX(-100%);
+    }
+    28%{
+        transform: translateX(-100%);
+    }
+    38%{
+        transform: translateX(-200%);
+    }
+    48%{
+        transform: translateX(-200%);
+    }
+    58%{
+        transform: translateX(-300%);
+    }
+    68%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-400%);
+    }
+    88%{
+        transform: translateX(-400%);
+    }
+}
+@keyframes text-fade-up{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(-500px);
+    }
+}
+
+/* FONTS IMPORT ============================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
